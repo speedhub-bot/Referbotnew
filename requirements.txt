@@ -1,0 +1,25 @@
+# ============================================================================
+#  AKAZA X PROXY — Python dependencies
+#  Pinned to known-good versions for reproducible Docker builds
+# ============================================================================
+
+# --- Telegram MTProto client (with C crypto acceleration) ---
+pyrogram==2.0.106
+tgcrypto==1.2.5
+pyaes==1.6.1
+
+# --- HTTP / proxy verification ---
+requests==2.32.3
+PySocks==1.7.1
+urllib3==2.2.3
+certifi==2024.8.30
+charset-normalizer==3.4.0
+idna==3.10
+
+# --- Archive extraction ---
+rarfile==4.2          # requires system `unrar` binary (installed in Dockerfile)
+py7zr==0.22.0         # pure-Python 7z support
+
+# --- Misc utilities already used by the bot ---
+# (psutil is optional but useful for /health diagnostics)
+psutil==6.0.0
